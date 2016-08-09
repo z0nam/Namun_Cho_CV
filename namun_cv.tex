@@ -1,0 +1,207 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Compact Academic CV
+% LaTeX Template
+% Version 1.0 (10/6/2012)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Dario Taraborelli (http://nitens.org/taraborelli/home)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important:
+% This template needs to be compiled using XeLaTeX
+%
+% Note: this template has the option to use the Hoefler Text font, see the
+% font configurations section below for instructions on using this font
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt, a4paper]{article} % Document font size and paper size
+\usepackage[hangul]{kotex}
+\usepackage{fontspec} % Allows the use of OpenType fonts
+
+
+\usepackage{geometry} % Allows the configuration of document margins
+\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in} % Document margin settings
+\setlength\parindent{0in} % Remove paragraph indentation
+
+\usepackage[usenames,dvipsnames]{xcolor} % Custom colors
+
+\usepackage{sectsty} % Allows changing the font options for sections in a document
+\usepackage[normalem]{ulem} % Custom underlining
+\usepackage{xunicode} % Allows generation of unicode characters from accented glyphs
+\defaultfontfeatures{Mapping=tex-text} % Converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+
+\usepackage{marginnote} % For margin years
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}} % New command for including margin years
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt} % Slightly increase the distance of the margin years from the contant
+\reversemarginpar
+
+\usepackage[xetex, bookmarks, colorlinks, breaklinks, pdftitle={조남운 - vita},pdfauthor={조남운}]{hyperref} % PDF setup - set your name and the title of the document to be incorporated into the final PDF file meta-information
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} % Link colors
+
+%----------------------------------------------------------------------------------------
+%	FONT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+% Two font choices are available in this template, the default is Linux Libertine, available for free at: http://www.linuxlibertine.org while the secondary choice is Hoefler Text which comes bundled with Mac OSX.
+% To use Hoefler Text, comment out the Linux Libertine block below and uncomment the Hoefler Text block. You will also need to replace the "\&" characters with "\amper{}" in section titles.
+
+% Linux Libertine Font (default)
+% \setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O} % Main text font
+%\setmonofont[Scale=0.8]{Monaco} % Set mono font (e.g. phone numbers)
+% \sectionfont{\mdseries\upshape\Large} % Set font options for sections
+% \subsectionfont{\mdseries\scshape\normalsize} % Set font options for subsections
+% \subsubsectionfont{\mdseries\upshape\large} % Set font options for subsubsections
+% \chardef\&="E050 % Custom ampersand character
+
+% Hoefler Text Font (bundled with Mac OSX)
+\setromanfont [Ligatures={Common}, Numbers={OldStyle}]{Hoefler Text} % Main text font
+\setmonofont[Scale=0.8]{Monaco} % Set mono font (e.g. phone numbers)
+\setsansfont[Scale=0.9]{Optima Regular} % Set sans font, used in the main name and titles in the document
+\newcommand{\amper}{{\fontspec[Scale=.95]{Hoefler Text}\selectfont\itshape\&}} % Custom ampersand character
+\sectionfont{\sffamily\mdseries\large\underline} % Set font options for sections
+\subsectionfont{\rmfamily\mdseries\scshape\normalsize} % Set font options for subsections
+\subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} % Set font options for subsubsections
+\setmainhangulfont[ItalicFont={*},ItalicFeatures={FakeSlant=.167}]{NanumMyeongjo}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	CONTACT AND GENERAL INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+{\LARGE 조남운}\\[1cm] % Your name
+서울대학교 분배정의와 사회통합 연구센터\\ % Your address
+서울시 관악구 관악로 1 서울대학교 16동 M304-2호 \texttt{08826}
+\\[.2cm]
+Phone: \texttt{010-6343-2884}\\ % Your phone number
+% Fax: \texttt{02-880-6454}\\[.2cm] % Your fax number
+Email: \href{mailto:namun@snu.ac.kr}{namun@snu.ac.kr}\\ % Your email address
+\textsc{url}: \href{http://spsm.snu.ac.kr/namun/}{http://spsm.snu.ac.kr/namun/}\\ % Your academic/personal website
+
+% \vfill % Whitespace between contact information and specific CV information
+
+%------------------------------------------------
+
+% Born: March 12, 1879---Ulm, Germany\\ % Your date of birth
+% Nationality: German/American % Your nationality
+
+%------------------------------------------------
+
+\section*{현재 직위}
+
+\emph{박사후 연구원}, 분배정의와 사회통합 SSK 연구센터 % Your current or previous employment position
+
+%------------------------------------------------
+
+\section*{관심분야}
+
+Computational Economics; Experimental Economics; Evolutionary Game Theory; Agent-based Model. % Your primary areas of research interest
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section*{학력 및 경력}
+
+\years{2001} \textsc{(학사)} 서울대학교 컴퓨터공학과\\
+\years{2006} \textsc{(석사)} 고려대학교 경제학과\\
+\years{2012} \textsc{(박사)} 고려대학교 경제학과\\
+\years{2012} \textsc{(위촉 연구원)} \href{http://isdpr.org}{서울대학교 사회발전연구소 Social Network Computing Center}\\
+\years{2013} \textsc{(박사후 연구원)} \href{http://distributivejustice.snu.ac.kr}{분배정의와 사회통합 SSK 연구센터}
+
+%----------------------------------------------------------------------------------------
+%	GRANTS, HONORS AND AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section*{수상경력}
+
+\years{2010}제5회 복잡계 컨퍼런스 대학원생부문 최우수논문\\
+\years{2011}제6회 복잡계 컨퍼런스 대학원생부문 동상
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS AND TALKS SECTION
+%----------------------------------------------------------------------------------------
+
+\section*{주요 연구실적}
+
+\years{2012} \href{https://www.dropbox.com/s/j3kcavkk9z36hzk/phDdraft_reduced.pdf?dl=0}{``Three Essays in the Computational and Experimental Economics''}, \emph{PhD Dissertation}\\
+
+\subsection*{Journal article}
+
+\years{2016} \href{http://www.earticle.net/article.aspx?sn=278619}{행위자 기반 시뮬레이션을 통한 공공 연구개발비 지출 제도 비교 연구}. \emph{산업혁신연구}, 32(2), 227–255. (이남형, 강영준, 최은철, 김아미와 함께 씀(교신저자))\\
+
+%
+
+
+%------------------------------------------------
+
+
+\subsection*{Book Chapter}
+
+% (역서)소셜리스트 레지스터
+\years{2014} \href{http://www.springer.com/us/book/9781461461692}{``NetMiner''}, in Alhajj, Reda, Rokne, Jon (Eds.), \textit{Encyclopedia of Social Network Analysis and Mining}, Springer-Verlag, NY, ISBN 978-1-4614-6169-2 (with Ghi-Hoon Ghim, Jeonsu Seo)\\
+
+%------------------------------------------------
+
+\subsection*{Magazine Article}
+
+\years{2015} \href{http://www.kps.or.kr/storage/webzine_uploadfiles/2321_article.pdf}{``정치예측시장의 작동원리''}, \emph{물리학과 첨단기술} 2015년 1/2월호 (안도경과 함께 씀)\\
+
+\subsection*{Conference Participations}
+\years{2016} \href{http://spsm.snu.ac.kr/namun/papers/abm.pdf}{``경제학에서의 행위자기반모형: 소개와 전망''}, 2016년 경제학 공동 학술대회 (한국경제학사학회 세션)\\
+\years{2014} \href{https://www.dropbox.com/s/5i99u86w7dkxgsb/tobacco_2014_KIPF_draft.pdf?dl=0}{``담배상품의 특수성을 감안한 소비모형 검토''}, 2014년 재정패널 학술대회\\
+\years{2014} \href{https://www.dropbox.com/s/utbilo9ib0cwgiq/inv_2014s.pdf?dl=0}{``느슨한 웹 기반 행동실험에서의 금전적 보상과 비금전적 보상에 관하여''}, 2014년 계량경제학회 하계학술대회\\
+\years{2014} \href{https://www.dropbox.com/s/gshcjhu31guh5mv/mpsa_false_consensus_media_effect.pdf?dl=0}{``A Media-based Explanation of the False Consensus Effect: Evidence from a Presidential Election Prediction Market''}, Midwest Political Science Association (MPSA) 2014. (with Kyu S. Hahn, T.K. Ahn, Won-Ho Park and Hyeri Shin)\\
+\years{2014} \href{https://www.dropbox.com/s/qaq2p08mq5sn4tx/mpsa_partisan_trading_spsm_ver3.0.docx?dl=0}{``Partisan Trading in a Presidential Election Prediction Market Experiment: The Case of 2012 Korean Presidential Election''}, MPSA 2014. (with Won-ho Park, TK Ahn, and Kyu S. Hahn)\\
+\years{2013} \href{https://www.dropbox.com/s/g37bsl1g2smuhb3/%5B%EB%8B%B4%EB%B0%B0%EA%B3%B5%EB%8F%99%EC%97%B0%EA%B5%AC%20%ED%95%99%ED%9A%8C%EB%B0%9C%ED%91%9C%EC%9B%90%EA%B3%A0%20%EC%B5%9C%EC%A2%85%EC%88%98%EC%A0%95%EB%B3%B8%5Dcho_go_kang%282013_10_10%29.pdf?dl=0}{``담배가격 인상의 소득귀착효과 연구''}, 2013 재정학회 추계 학술대회. (강영준, 고제이와 함께 씀)\\
+\years{2011} \href{https://www.dropbox.com/s/u57gbzq66ourzb2/Draft120611_zn.pdf?dl=0}{``최적 고속도로 요금 검토: 천안-논산과 대구-부산 구간을 중심으로''}, 2011년 경제학 공동 학술대회. (이남형, 김균과 함께 씀)\\
+\years{2011} \href{https://www.dropbox.com/s/a9a4asadjeo36x7/NamunCho_COREN2011_draft%2820111114%29.pdf?dl=0}{``상호의존적 기대하에서 정보의 역할: 행위자 기반 시뮬레이션''}, 제6회 복잡계 컨퍼런스\\
+\years{2010} \href{https://www.dropbox.com/s/jrceax37h2sxz4j/coren_draft_short.pdf?dl=0}{``상호의존적 기대하에서 정보의 역할: 실험적 접근''}, 제5회 복잡계 컨퍼런스\\
+\years{2010} \href{https://www.dropbox.com/s/qejr4lf2klroa7d/draft%2811.04.19%29.pdf?dl=0}{``What makes the open source software development sustainable?: Agent based model on two conjectures''}, The 4th FLOSS International Workshop on Free/Libre/Open Source Software. (with Namhyung Lee)\\
+
+%----------------------------------------------------------------------------------------
+%	TEACHING SECTION
+%----------------------------------------------------------------------------------------
+
+\section*{Teaching}
+
+\years{2007-현재} 경제수학, 계량경제학, 미시경제학, 거시경제학, 경제원론, 경제학개론 강의
+
+%------------------------------------------------
+
+% \section*{Service to the profession}
+%
+% ...
+
+\vfill{} % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+
+\begin{center}
+{\scriptsize Last updated: \today%\- •\- \href{http://www.LaTeXTemplates.com}{http://www.LaTeXTemplates.com}
+} % Any final footer text such as a URL to the latest version of your CV, last updated date, compiled in XeTeX, etc
+\end{center}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
