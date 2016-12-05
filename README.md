@@ -1,1 +1,0 @@
-# Namun Cho's CV
